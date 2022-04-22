@@ -105,7 +105,7 @@ img {
   line-height: 1.88;
   letter-spacing: 0.06em;
 
-  color: #ffffff;
+  color: var(--main-background);
   background-color: #2196f3;
   border: 1px solid transparent;
 }
@@ -133,6 +133,7 @@ img {
 
 .list-btn:hover,
 .list-btn:focus {
+  cursor: pointer;
   color: var(--main-background);
   background-color: var(--list-button-hover);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -213,7 +214,7 @@ img {
 .portfolio-sort {
   padding: 20px 24px;
 
-  background: #ffffff;
+  background-color: var(--main-background);
   border: 1px solid #eeeeee;
   border-top: 0;
 }
@@ -334,7 +335,7 @@ img {
   margin: 0;
   margin-bottom: 30px;
 
-  color: #ffffff;
+  color: var(--main-background);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -391,11 +392,12 @@ img {
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
+
   background-color: #f5f4fa;
 }
 
 .team-item {
-  background: #ffffff;
+  background-color: var(--main-background);
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -446,7 +448,8 @@ img {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background: var(--secondary-background);
+
+  background-color: var(--secondary-background);
 }
 
 .address-link {
@@ -455,7 +458,7 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  color: #ffffff;
+  color: var(--main-background);
 }
 
 .address-link:hover,
