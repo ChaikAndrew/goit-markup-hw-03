@@ -1,0 +1,492 @@
+:root {
+  --accent-color: #2196f3;
+  --logo-web-color: #2196f3;
+  --logo-studio-dark-color: #000000;
+  --logo-studio-light-color: #ffffff;
+  --text-color: #212121;
+  --list-button-color: #f5f4fa;
+  --list-button-hover: #2196f3;
+  --text-color-light: #757575;
+  --main-background: #ffffff;
+  --secondary-background: #2f303a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.caption {
+  visibility: hidden;
+  position: absolute;
+}
+
+/* =============== LOGO =============== */
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: var(--logo-web-color);
+}
+
+.logo-dark {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: var(--logo-studio-dark-color);
+}
+
+.logo-light {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: var(--logo-studio-light-color);
+  background: #2f303a;
+}
+/* ===============  /LOGO =============== */
+
+/* ===============  BUTTON =============== */
+
+.main-btn {
+  border-radius: 4px;
+  padding: 10px 32px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+  background-color: #2196f3;
+  border: 1px solid transparent;
+}
+
+.main-btn:hover,
+.main-btn:focus {
+  background: #188ce8;
+  cursor: pointer;
+}
+
+.list-btn {
+  border-radius: 4px;
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--text-color);
+  background-color: var(--list-button-color);
+  border: 1px solid transparent;
+}
+
+.list-btn:hover,
+.list-btn:focus {
+  color: var(--main-background);
+  background-color: var(--list-button-hover);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* ===============  /BUTTON =============== */
+
+/* ===============  OUR FEATURES =============== */
+
+.subtitle {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.subtitle-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--text-color-light);
+}
+
+.headline {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.67;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+/* ===============  /OUR FEATURES =============== */
+
+/* ===============  TEAM =============== */
+
+.name-list {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.speciality-list {
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--text-color-light);
+}
+
+/* =============== /TEAM =============== */
+
+/* =============== PORTFOLIO =============== */
+
+.portfolio-title {
+  margin-bottom: 4px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: #212121;
+}
+
+.portfolio-sort {
+  padding: 20px 24px;
+
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-top: 0;
+}
+
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+
+  color: var(--text-color-light);
+}
+/* =============== /PORTFOLIO =============== */
+
+/* =============== HEADER =============== */
+
+.header {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.menu {
+  margin-left: 93px;
+  display: flex;
+}
+
+/* main-nav */
+.main-nav {
+  display: flex;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+/* menu */
+.menu .menu-item + .menu-item {
+  margin-left: 40px;
+}
+
+/* auth-nav */
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.auth-nav .menu-item + .menu-item {
+  margin-left: 50px;
+}
+
+.menu-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
+}
+
+.menu-link.active {
+  color: var(--accent-color);
+}
+
+.contact-number {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--text-color-light);
+}
+
+.contact-number:hover,
+.contact-number:focus {
+  color: var(--accent-color);
+}
+
+.contact-mail {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--text-color-light);
+}
+
+.contact-mail:hover,
+.contact-mail:focus {
+  color: var(--accent-color);
+}
+
+/* =============== /HEADER =============== */
+
+/* =============== HERO =============== */
+
+.section.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+
+  background-color: var(--secondary-background);
+}
+
+.main-title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* =============== /HERO =============== */
+
+/* =============== BODY =============== */
+
+/* Projects */
+
+.projects {
+  display: flex;
+  justify-content: center;
+}
+
+.projects .project-list + .project-list {
+  margin-left: 8px;
+}
+
+.body-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.body-list .list-benefits {
+  width: 270px;
+}
+
+.body-list .list-benefits + .list-benefits {
+  margin-left: 30px;
+}
+
+.development {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.development .development-item + .development-item {
+  margin-left: 30px;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team-list .team-item + .team-item {
+  margin-left: 30px;
+}
+
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: #f5f4fa;
+}
+
+.team-item {
+  background: #ffffff;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--main-background);
+}
+.section.development {
+  padding-top: 0;
+}
+
+.teammate-list {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.projects.list {
+  margin-bottom: 50px;
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.portfolio-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.portfolio-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+/* =============== /BODY=============== */
+
+/* =============== FOOTER =============== */
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: var(--secondary-background);
+}
+
+.address-link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: var(--accent-color);
+}
+
+.contacts-mail {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contacts-mail:hover,
+.contacts-mail:focus {
+  color: var(--accent-color);
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contacts:hover,
+.contacts:focus {
+  color: var(--accent-color);
+}
+/* =============== /FOOTER =============== */
