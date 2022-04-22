@@ -91,6 +91,7 @@ img {
   color: var(--logo-studio-light-color);
   background: #2f303a;
 }
+
 /* ===============  /LOGO =============== */
 
 /* ===============  BUTTON =============== */
@@ -488,5 +489,16 @@ img {
 .contacts:hover,
 .contacts:focus {
   color: var(--accent-color);
+}
+
+.address {
+  margin-top: 20px;
+}
+
+.address-map {
+  margin-bottom: 9px;
+}
+.address-mail {
+  margin-bottom: 9px;
 }
 /* =============== /FOOTER =============== */
